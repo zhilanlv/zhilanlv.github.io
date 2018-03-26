@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/tags/http/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -115,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/tags/http/"/>
 
 
 
 
 
-  <title>Hexo</title>
+  <title>标签: http | Hexo</title>
   
 
 
@@ -140,8 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,276 +223,53 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block tag">
+
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>http<small>标签</small>
+        </h1>
+      </div>
+
       
-
-  
-
-  
-  
-  
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/26/second/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhilan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/26/second/" itemprop="url">跨域</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2018/03/26/second/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">跨域</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-26T21:39:48+08:00">
-                2018-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
+            </a>
         
-          
-            <p>同源策略：<br>    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档</p>
-<p>跨域方法：</p>
-<pre><code>• cors：
-    基本思想：使用自定义的HTTP头让浏览器和服务器进行沟通，从而决定请求或响应是否要成功；
-    请求发送时要附加一个额外的Origin头部，包含请求页面的源信息；
-    当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允许指定域的站点访问当前域上的资源，默认只支持GET/POST这两种http请求类型
+      </h2>
 
-• HTML5解决方案
-    a. 使用 postMessage 方法和 onmessage 事件来实现不同域之间的通信，其中postMessage用于实时向接收信息的页面发送消息
-    b. WebSocket：实现了浏览器与服务器全双工通信，同时允许跨域通讯（服务器端可以主动发送数据）
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-03-26T21:39:48+08:00"
+              content="2018-03-26" >
+          03-26
+        </time>
+      </div>
 
-• jsonp：
-    通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的函数，并且会把我们需要的json数据作为参数传入，JSONP始终是无状态连接，不能获悉连接状态和错误事件，而且只能走GET的形式
+    </header>
+  </article>
 
-• iframe形式
-    a. 通过修改document.domain来跨子域：只适合主域相同但子域不同的情况，把document.domain设置成自身或更高一级的父域，且主域必须相同，只适用于不同子域的框架间的交互，ajax还是不能获取信息
-    b. window.name：窗体的name值在页面跳转后依旧存在、保持原值（即使跳转的页面不同域），并且可以支持非常长的 name值（2MB）。在a.html页面中使用一个隐藏的iframe来充当一个中间人角色，由iframe去获取data.html的数据，然后a.html再去得到iframe获取到的数据。
-</code></pre>
-          
-        
+
       
     </div>
-    
-    
-    
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/17/JS-元素大小/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zhilan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/17/JS-元素大小/" itemprop="url">JS 元素大小</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-17T20:17:55+08:00">
-                2018-03-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>偏移量</p>
-<pre><code>offsetTop, offsetHeight, offsetLeft, offsetWidth
-</code></pre><p>客户区大小</p>
-<pre><code>元素内容及其内边距所占据的空间的大小; clientWidth   clientHeight; 滚动条占用的空间不计算在内，可用来确定浏览器视口大小
-</code></pre><p>滚动大小</p>
-<pre><code>包含滚动内容的元素的大小；
- scrollHeight：没有滚动条情况下，元素内容的总高度，即实际高度
- scrollWidth：没有滚动条情况下，元素内容的总宽度，即实际宽度
- scrollLeft：被隐藏在内容区域左侧的像素数
- scrollTop：被隐藏在内容区域上方的像素数
-
-确定元素大小: getBoundingClientRect( ), 返回矩形对象，left top right bottom
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
 
   
 
