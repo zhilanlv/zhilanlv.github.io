@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档 跨域方法： • cors：     基本思想：使用自定义的HTTP头让浏览器和服务器进行沟通，从而决定请求或响应是否要成功；     请求发送时要附加一个额外的Origin头部，包含请求页面的源信息；     当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允">
+<meta name="description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
 <meta name="keywords" content="http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="跨域">
 <meta property="og:url" content="http://yoursite.com/2018/03/26/second/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档 跨域方法： • cors：     基本思想：使用自定义的HTTP头让浏览器和服务器进行沟通，从而决定请求或响应是否要成功；     请求发送时要附加一个额外的Origin头部，包含请求页面的源信息；     当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允">
+<meta property="og:description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-26T13:47:03.000Z">
+<meta property="og:updated_time" content="2018-03-27T02:14:25.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跨域">
-<meta name="twitter:description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档 跨域方法： • cors：     基本思想：使用自定义的HTTP头让浏览器和服务器进行沟通，从而决定请求或响应是否要成功；     请求发送时要附加一个额外的Origin头部，包含请求页面的源信息；     当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允">
+<meta name="twitter:description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
 
 
 
@@ -310,24 +310,14 @@
       
 
       
-        <p>同源策略：<br>    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档</p>
+        <p>同源策略：<br>    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档<br>    以下是跨域方法总结</p>
+<a id="more"></a>
 <p>跨域方法：</p>
-<pre><code>• cors：
-    基本思想：使用自定义的HTTP头让浏览器和服务器进行沟通，从而决定请求或响应是否要成功；
-    请求发送时要附加一个额外的Origin头部，包含请求页面的源信息；
-    当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允许指定域的站点访问当前域上的资源，默认只支持GET/POST这两种http请求类型
+<p>• cors：<br>        基本思想：使用自定义的HTTP头让浏览器和服务器进行沟通，从而决定请求或响应是否要成功；<br>        请求发送时要附加一个额外的Origin头部，包含请求页面的源信息；<br>        当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允许指定域的站点访问当前域上的资源，默认只支持GET/POST这两种http请求类型</p>
+<p>• HTML5解决方案<br>        a. 使用 postMessage 方法和 onmessage 事件来实现不同域之间的通信，其中postMessage用于实时向接收信息的页面发送消息<br>        b. WebSocket：实现了浏览器与服务器全双工通信，同时允许跨域通讯（服务器端可以主动发送数据）</p>
+<p>• jsonp：<br>        通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的函数，并且会把我们需要的json数据作为参数传入，JSONP始终是无状态连接，不能获悉连接状态和错误事件，而且只能走GET的形式</p>
+<p>• iframe形式<br>        a. 通过修改document.domain来跨子域：只适合主域相同但子域不同的情况，把document.domain设置成自身或更高一级的父域，且主域必须相同，只适用于不同子域的框架间的交互，ajax还是不能获取信息<br>        b. window.name：窗体的name值在页面跳转后依旧存在、保持原值（即使跳转的页面不同域），并且可以支持非常长的 name值（2MB）。在a.html页面中使用一个隐藏的iframe来充当一个中间人角色，由iframe去获取data.html的数据，然后a.html再去得到iframe获取到的数据。</p>
 
-• HTML5解决方案
-    a. 使用 postMessage 方法和 onmessage 事件来实现不同域之间的通信，其中postMessage用于实时向接收信息的页面发送消息
-    b. WebSocket：实现了浏览器与服务器全双工通信，同时允许跨域通讯（服务器端可以主动发送数据）
-
-• jsonp：
-    通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的函数，并且会把我们需要的json数据作为参数传入，JSONP始终是无状态连接，不能获悉连接状态和错误事件，而且只能走GET的形式
-
-• iframe形式
-    a. 通过修改document.domain来跨子域：只适合主域相同但子域不同的情况，把document.domain设置成自身或更高一级的父域，且主域必须相同，只适用于不同子域的框架间的交互，ajax还是不能获取信息
-    b. window.name：窗体的name值在页面跳转后依旧存在、保持原值（即使跳转的页面不同域），并且可以支持非常长的 name值（2MB）。在a.html页面中使用一个隐藏的iframe来充当一个中间人角色，由iframe去获取data.html的数据，然后a.html再去得到iframe获取到的数据。
-</code></pre>
       
     </div>
     
