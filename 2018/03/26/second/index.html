@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
+<meta name="description" content="同源策略    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
 <meta name="keywords" content="http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="跨域">
 <meta property="og:url" content="http://yoursite.com/2018/03/26/second/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
+<meta property="og:description" content="同源策略    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-01T11:37:07.000Z">
+<meta property="og:updated_time" content="2018-04-07T08:17:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跨域">
-<meta name="twitter:description" content="同源策略：    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
+<meta name="twitter:description" content="同源策略    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档    以下是跨域方法总结">
 
 
 
@@ -310,13 +310,9 @@
       
 
       
-        <p>同源策略：<br>    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档<br>    以下是跨域方法总结</p>
-<a id="more"></a>
-<p>跨域方法：</p>
-<p>• cors：<br>        基本思想：使用自定义的HTTP头让浏览器和服务器进行沟通，从而决定请求或响应是否要成功；<br>        请求发送时要附加一个额外的Origin头部，包含请求页面的源信息；<br>        当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允许指定域的站点访问当前域上的资源，默认只支持GET/POST这两种http请求类型</p>
-<p>• HTML5解决方案<br>        使用 postMessage 方法和 onmessage 事件来实现不同域之间的通信，其中postMessage用于实时向接收信息的页面发送消息</p>
-<p>• jsonp：<br>        通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的函数，并且会把我们需要的json数据作为参数传入，JSONP始终是无状态连接，不能获悉连接状态和错误事件，而且只能走GET的形式</p>
-<p>• iframe形式<br>        a. 通过修改document.domain来跨子域：只适合主域相同但子域不同的情况，把document.domain设置成自身或更高一级的父域，且主域必须相同，只适用于不同子域的框架间的交互，ajax还是不能获取信息<br>        b. window.name：窗体的name值在页面跳转后依旧存在、保持原值（即使跳转的页面不同域），并且可以支持非常长的 name值（2MB）。在a.html页面中使用一个隐藏的iframe来充当一个中间人角色，由iframe去获取data.html的数据，然后a.html再去得到iframe获取到的数据。</p>
+        <h3>同源策略</h3><br>    协议，域名，端口号必须相同；不同源不可操作对方的DOM文档<br>    以下是跨域方法总结<br><br><a id="more"></a><br><br><h3>跨域方法</h3>
+
+<p> cors：<br>基本思想：使用自定义的HTTP头让浏览器和服务器进行沟通，从而决定请求或响应是否要成功；<br>        请求发送时要附加一个额外的Origin头部，包含请求页面的源信息；<br>        当前域（常规为存放资源的服务器）在响应报头添加Access-Control-Allow-Origin标签，从而允许指定域的站点访问当前域上的资源，默认只支持GET/POST这两种http请求类型<br><br><br>HTML5解决方案:<br>使用 postMessage 方法和 onmessage 事件来实现不同域之间的通信，其中postMessage用于实时向接收信息的页面发送消息<br><br><br>jsonp：<br>通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的函数，并且会把我们需要的json数据作为参数传入，JSONP始终是无状态连接，不能获悉连接状态和错误事件，而且只能走GET的形式<br><br><br>iframe形式:<br>a. 通过修改document.domain来跨子域：只适合主域相同但子域不同的情况，把document.domain设置成自身或更高一级的父域，且主域必须相同，只适用于不同子域的框架间的交互，ajax还是不能获取信息<br>b. window.name：窗体的name值在页面跳转后依旧存在、保持原值（即使跳转的页面不同域），并且可以支持非常长的 name值（2MB）。在a.html页面中使用一个隐藏的iframe来充当一个中间人角色，由iframe去获取data.html的数据，然后a.html再去得到iframe获取到的数据。</p>
 
       
     </div>
@@ -411,8 +407,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -427,7 +432,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -440,7 +445,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -454,9 +459,9 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://weibo.com/2920650253/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" title="weibo">
+                    <a href="https://weibo.com/2920650253/profile?rightmod=1&wvr=6&mod=personinfo" target="_blank" title="Weibo">
                       
-                        <i class="fa fa-fw fa-globe"></i>weibo</a>
+                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
                   </span>
                 
             </div>
@@ -473,6 +478,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">同源策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">跨域方法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
