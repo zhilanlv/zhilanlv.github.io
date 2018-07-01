@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="实习get：Charles抓包工具～">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-01T15:31:23.000Z">
+<meta property="og:updated_time" content="2018-07-01T15:42:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="实习记录：用Charles将本地文件代理到线上">
 <meta name="twitter:description" content="实习get：Charles抓包工具～">
@@ -310,14 +310,15 @@
       
 
       
-        <p>实习get：Charles抓包工具～<br><a id="more"></a></p>
-<p>​   在做h5的项目的时候，修改了本地文件之后想要预览线上的效果时，如果一遍遍的把代码build后传到Beta环境，会带来两个问题：</p>
+        <h5 id="实习get：Charles抓包工具～"><a href="#实习get：Charles抓包工具～" class="headerlink" title="实习get：Charles抓包工具～"></a>实习get：Charles抓包工具～</h5><a id="more"></a>
+<p>​&emsp;&emsp;在做h5的项目的时候，修改了本地文件之后想要预览线上的效果时，如果一遍遍的把代码build后传到Beta环境，会带来两个问题：</p>
 <ul>
 <li>git提交次数太多，测试的分支记录很乱</li>
 <li>时间太久，公司用的beta环境构建部署很慢</li>
 </ul>
-<p>​   使用Charles可以将本地build后的文件代理到线上，预览和修改更加方便。其原理是，Charles这个代理服务器相当于一个http/https请求到服务器之间的中转站，因此它可以截取网络请求。此时，将网络请求map到本地build后的文件，相当于直接从本地拉取数据，也就达到了预览本地修改后的结果的效果。</p>
-<p>​   同理，由于使用Charles可以直接让网络请求从本地拉数据，在做需要后端配合的项目时，如果后端不能及时给到数据，可以将json文件保存在本地，将对应链接map到本地，修改本地文件，可自由模拟收到的数据。<br>    用到的设置项是map local，可以配置一个链接对应一个本地文件，也可以配置一个项目对应一个本<br>地的dist文件夹，我主要配的是h5的项目和微信小程序～就酱～</p>
+<p>&emsp;&emsp;使用Charles可以将本地build后的文件代理到线上，预览和修改更加方便。其原理是，Charles这个代理服务器相当于一个http/https请求到服务器之间的中转站，因此它可以截取网络请求。此时，将网络请求map到本地build后的文件，相当于直接从本地拉取数据，也就达到了预览本地修改后的结果的效果。</p>
+<p>​&emsp;&emsp;同理，由于使用Charles可以直接让网络请求从本地拉数据，在做需要后端配合的项目时，如果后端不能及时给到数据，可以将json文件保存在本地，将对应链接map到本地，修改本地文件，可自由模拟收到的数据。</p>
+<p>&emsp;&emsp;用到的设置项是map local，可以配置一个链接对应一个本地文件，也可以配置一个项目对应一个本<br>地的dist文件夹，我主要配的是h5的项目和微信小程序～就酱～</p>
 
       
     </div>
@@ -408,8 +409,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -470,6 +480,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#实习get：Charles抓包工具～"><span class="nav-number">1.</span> <span class="nav-text">实习get：Charles抓包工具～</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
