@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="js.dom," />
+  <meta name="keywords" content="css," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="DOM中确定元素大小">
-<meta name="keywords" content="js.dom">
+<meta name="description" content="＊＊CSS读书笔记＊＊&amp;emsp;&amp;emsp;提测间隙逛掘金时发现有人推’CSS in Depth’这本书，然后我就找来看了一下。没有译本读起来有点点慢，这周看的是第二章，相对单位，看下来的感受是作者梳理的很清楚，举例也很明了，然后我就总结了一点读书笔记～">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS 元素大小">
-<meta property="og:url" content="http://yoursite.com/2018/03/17/JS-元素大小/index.html">
+<meta property="og:title" content="CSS in Depth 读书笔记">
+<meta property="og:url" content="http://yoursite.com/2018/07/13/sx2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="DOM中确定元素大小">
+<meta property="og:description" content="＊＊CSS读书笔记＊＊&amp;emsp;&amp;emsp;提测间隙逛掘金时发现有人推’CSS in Depth’这本书，然后我就找来看了一下。没有译本读起来有点点慢，这周看的是第二章，相对单位，看下来的感受是作者梳理的很清楚，举例也很明了，然后我就总结了一点读书笔记～">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-08T04:01:35.000Z">
+<meta property="og:updated_time" content="2018-07-13T14:17:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS 元素大小">
-<meta name="twitter:description" content="DOM中确定元素大小">
+<meta name="twitter:title" content="CSS in Depth 读书笔记">
+<meta name="twitter:description" content="＊＊CSS读书笔记＊＊&amp;emsp;&amp;emsp;提测间隙逛掘金时发现有人推’CSS in Depth’这本书，然后我就找来看了一下。没有译本读起来有点点慢，这周看的是第二章，相对单位，看下来的感受是作者梳理的很清楚，举例也很明了，然后我就总结了一点读书笔记～">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/17/JS-元素大小/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/13/sx2/"/>
 
 
 
 
 
-  <title>JS 元素大小 | Hexo</title>
+  <title>CSS in Depth 读书笔记 | Hexo</title>
   
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/17/JS-元素大小/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/13/sx2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhilan">
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JS 元素大小</h1>
+          <h1 class="post-title" itemprop="name headline">CSS in Depth 读书笔记</h1>
         
 
         <div class="post-meta">
@@ -272,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-17T20:17:55+08:00">
-                2018-03-17
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-13T21:40:33+08:00">
+                2018-07-13
               </time>
             
 
@@ -310,11 +310,33 @@
       
 
       
-        <h4 id="DOM中确定元素大小"><a href="#DOM中确定元素大小" class="headerlink" title="DOM中确定元素大小"></a>DOM中确定元素大小</h4><a id="more"></a>
-<h5 id="偏移量"><a href="#偏移量" class="headerlink" title="偏移量"></a>偏移量</h5><p>offsetTop, offsetHeight, offsetLeft, offsetWidth</p>
-<h5 id="客户区大小"><a href="#客户区大小" class="headerlink" title="客户区大小"></a>客户区大小</h5><p>元素内容及其内边距所占据的空间的大小; clientWidth   clientHeight; 滚动条占用的空间不计算在内，可用来确定浏览器视口大小</p>
-<h5 id="滚动大小"><a href="#滚动大小" class="headerlink" title="滚动大小"></a>滚动大小</h5><p>包含滚动内容的元素的大小；<br>     scrollHeight：没有滚动条情况下，元素内容的总高度，即实际高度<br>     scrollWidth：没有滚动条情况下，元素内容的总宽度，即实际宽度<br>     scrollLeft：被隐藏在内容区域左侧的像素数<br>     scrollTop：被隐藏在内容区域上方的像素数</p>
-<p>确定元素大小: getBoundingClientRect( ), 返回矩形对象，left top right bottom</p>
+        <h5 id="＊＊CSS读书笔记＊＊"><a href="#＊＊CSS读书笔记＊＊" class="headerlink" title="＊＊CSS读书笔记＊＊"></a>＊＊CSS读书笔记＊＊</h5><p>&emsp;&emsp;提测间隙逛掘金时发现有人推’CSS in Depth’这本书，然后我就找来看了一下。没有译本读起来有点点慢，这周看的是第二章，相对单位，看下来的感受是作者梳理的很清楚，举例也很明了，然后我就总结了一点读书笔记～<br><a id="more"></a></p>
+<hr>
+<p>&emsp;&emsp;响应式布局常采用的相对长度单位是em，rem。</p>
+<p>&emsp;&emsp;<strong>em</strong>：基准值是当前元素的字号大小，可以应用在padding，margin等距离计算上。在CSS中，1em表示当前元素的字号大小，实际值取决于在哪个元素上应用。可以定义一个元素的字号大小，然后可以通过改变字号大小从而控制整个元素大小缩放。</p>
+<ul>
+<li>对font-size使用em：在font-size上的em会先从继承到的字号大小衍生出来，即基准值是继承的字号大小；</li>
+<li>在一个元素内用em同时声明font-size和其他属性：浏览器必须先计算font-size，然后基于这个值再去计算其他值。这些属性声明的时候使用的是相同的em值，但很可能它们会有不同的计算值。</li>
+</ul>
+<p>&emsp;&emsp;注：所有字体单位都使用em会带来的问题是，在层层嵌套的情景下，子元素的字体大小会一直随父元素字体大小变化，可能一不小心就会造成一连串逐渐缩小／扩大的列表项，或者当需要确切的字体大小时，要根据层层父元素字体大小计算，会比较麻烦。</p>
+<hr>
+<p>&emsp;&emsp;<strong>rem</strong>：基准值是根元素（:root）的字号大小。<br>&emsp;&emsp;rem可以和em结合起来用，用rem指定字体大小时不用费力计算，只需考虑根元素的字号大小。再用em控制边距等时，与media query结合使用（不同屏幕指定不同的根元素字号大小），可以达到方便的响应式布局设计的效果。<br>&emsp;&emsp;注：这个方案的缺点是，会有breakpoints（断点），因为 media query 指定的是一个区间。</p>
+<hr>
+<p>&emsp;&emsp;<strong>viewport</strong>：浏览器的视窗，下面四个参数也可以是font-size的单位，这时font-size的大小相对于浏览器的宽或高平滑变化。</p>
+<ul>
+<li>vh—1/100th of the viewport height </li>
+<li>vw—1/100th of the viewport width </li>
+<li>vmin—1/100th of the smaller dimension, height or width (IE9 supports vm<br>instead of vmin) </li>
+<li><p>vmax—1/100th of the larger dimension, height or width (not supported in IE<br>or, at the time of writing, Edge)<br>（可以和 calc() 结合，实现有基本值的不同大小视窗的平滑过渡，而media query的响应式不是平滑的）</p>
+<pre><code>:root {
+    font-size: calc(0.5em + 1vw);
+}
+</code></pre></li>
+</ul>
+<hr>
+<p>&emsp;&emsp;<strong>line-height</strong>：如果line-height的值是无单位的，父元素设定后，子元素继承时继承的不是一个固定高度，而是一个比例值，具体高度是比例值✖️子元素自身的字体大小（推荐）；<br>&emsp;&emsp;如果line-height的值是有单位的，子元素继承的是固定的行高（不推荐）</p>
+<hr>
+<p>&emsp;&emsp;<strong>custom properties</strong>：CSS本身制定的使用变量的规则，变量名称要 – 开头，定义在父容器中，子节点使用时用 var()，第一个参数为变量名，可以设定第二个参数为备选值；<br>&emsp;&emsp;当同样的变量被其他父容器重写时，会对此父容器内的所有子节点都生效，即，变量并非一成不变，可以针对不同的容器的需求制定。</p>
 
       
     </div>
@@ -332,7 +354,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/js-dom/" rel="tag"># js.dom</a>
+            <a href="/tags/css/" rel="tag"># css</a>
           
         </div>
       
@@ -345,15 +367,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/07/08/shixi2/" rel="next" title="实习记录：第一次写小程序">
+                <i class="fa fa-chevron-left"></i> 实习记录：第一次写小程序
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/26/second/" rel="prev" title="跨域">
-                跨域 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -486,7 +508,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#DOM中确定元素大小"><span class="nav-number">1.</span> <span class="nav-text">DOM中确定元素大小</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#偏移量"><span class="nav-number">1.1.</span> <span class="nav-text">偏移量</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#客户区大小"><span class="nav-number">1.2.</span> <span class="nav-text">客户区大小</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#滚动大小"><span class="nav-number">1.3.</span> <span class="nav-text">滚动大小</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#＊＊CSS读书笔记＊＊"><span class="nav-number">1.</span> <span class="nav-text">＊＊CSS读书笔记＊＊</span></a></li></ol></div>
             
 
           </div>
