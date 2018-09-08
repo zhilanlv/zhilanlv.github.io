@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="practice," />
 
 
 
@@ -80,18 +80,19 @@
 
 
 <meta name="description" content="Game of Life，又称康威生命棋，是英国数学家约翰·何顿·康威在1970年发明的细胞自动机。可以用 React 模拟一个 Game of Life，fork自 github上的一个项目。">
+<meta name="keywords" content="practice">
 <meta property="og:type" content="article">
-<meta property="og:title" content="newlifegame">
+<meta property="og:title" content="Game of Life">
 <meta property="og:url" content="http://yoursite.com/2018/09/08/newlifegame/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Game of Life，又称康威生命棋，是英国数学家约翰·何顿·康威在1970年发明的细胞自动机。可以用 React 模拟一个 Game of Life，fork自 github上的一个项目。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/09/08/newlifegame/list.png">
 <meta property="og:image" content="http://yoursite.com/2018/09/08/newlifegame/action.png">
-<meta property="og:image" content="http://yoursite.com/2018/09/08/newlifegame/lifegame.gif">
-<meta property="og:updated_time" content="2018-09-08T09:10:30.000Z">
+<meta property="og:image" content="http://yoursite.com/2018/09/08/newlifegame/newlife.gif">
+<meta property="og:updated_time" content="2018-09-08T09:30:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="newlifegame">
+<meta name="twitter:title" content="Game of Life">
 <meta name="twitter:description" content="Game of Life，又称康威生命棋，是英国数学家约翰·何顿·康威在1970年发明的细胞自动机。可以用 React 模拟一个 Game of Life，fork自 github上的一个项目。">
 <meta name="twitter:image" content="http://yoursite.com/2018/09/08/newlifegame/list.png">
 
@@ -129,7 +130,7 @@
 
 
 
-  <title>newlifegame | Hexo</title>
+  <title>Game of Life | Hexo</title>
   
 
 
@@ -263,7 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">newlifegame</h1>
+          <h1 class="post-title" itemprop="name headline">Game of Life</h1>
         
 
         <div class="post-meta">
@@ -327,7 +328,7 @@
 <p>整个游戏用 Redux 管理状态，需要管理的状态有三种：<br>1）棋盘 Board：每一格棋子代表一个细胞，每个细胞有三个状态：已经存活的细胞，新繁殖的细胞，死亡的细胞。可以用二维数组保存棋盘中所有细胞的状态，对应的index即为坐标。<br>2）控制按钮：a. 随机生成棋盘细胞 b. 清屏 c. 暂停／开始 d. 前进一步<br>3）计数器</p>
 <p>对应的列出需要控制的动作：<br><img src="/2018/09/08/newlifegame/action.png"></p>
 <p>然后写状态对应的 reducer，在各个reducer中进行状态初始化。设定棋盘宽高 20＊50，用二维数组存，需要注意的是数组每个项对应的应该是个对象，存是否存活，以及是否新生。在 toggleAlive时，两个状态都取反。tick对应的是前进一步的操作，当对应的是 play 状态时，用循环定时器循环tick。</p>
-<p>最后的效果：<br><img src="/2018/09/08/newlifegame/lifegame.gif"></p>
+<p>最后的效果：<br><img src="/2018/09/08/newlifegame/newlife.gif"></p>
 
       
     </div>
@@ -343,6 +344,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/practice/" rel="tag"># practice</a>
+          
+        </div>
+      
 
       
       
@@ -352,8 +359,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/07/lifegame/" rel="next" title="React 实现 Game of Life">
-                <i class="fa fa-chevron-left"></i> React 实现 Game of Life
+              <a href="/2018/08/10/shixi3/" rel="next" title="实习记录：小程序写分页加载页面">
+                <i class="fa fa-chevron-left"></i> 实习记录：小程序写分页加载页面
               </a>
             
           </div>
@@ -428,7 +435,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
