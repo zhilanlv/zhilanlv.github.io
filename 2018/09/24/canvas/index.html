@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="practice," />
+  <meta name="keywords" content="html," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="＊＊第一次写微信小程序的体会＊＊">
-<meta name="keywords" content="practice">
+<meta name="description" content="最近在学习 canvas，整理了一下常用的API～">
+<meta name="keywords" content="html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="实习记录：第一次写小程序">
-<meta property="og:url" content="http://yoursite.com/2018/07/08/shixi2/index.html">
+<meta property="og:title" content="Canvas">
+<meta property="og:url" content="http://yoursite.com/2018/09/24/canvas/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="＊＊第一次写微信小程序的体会＊＊">
+<meta property="og:description" content="最近在学习 canvas，整理了一下常用的API～">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-08T14:00:24.000Z">
+<meta property="og:updated_time" content="2018-09-24T03:14:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="实习记录：第一次写小程序">
-<meta name="twitter:description" content="＊＊第一次写微信小程序的体会＊＊">
+<meta name="twitter:title" content="Canvas">
+<meta name="twitter:description" content="最近在学习 canvas，整理了一下常用的API～">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/08/shixi2/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/24/canvas/"/>
 
 
 
 
 
-  <title>实习记录：第一次写小程序 | Hexo</title>
+  <title>Canvas | Hexo</title>
   
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/08/shixi2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/24/canvas/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhilan">
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">实习记录：第一次写小程序</h1>
+          <h1 class="post-title" itemprop="name headline">Canvas</h1>
         
 
         <div class="post-meta">
@@ -272,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-08T21:13:14+08:00">
-                2018-07-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-24T10:57:41+08:00">
+                2018-09-24
               </time>
             
 
@@ -310,16 +310,18 @@
       
 
       
-        <h5 id="＊＊第一次写微信小程序的体会＊＊"><a href="#＊＊第一次写微信小程序的体会＊＊" class="headerlink" title="＊＊第一次写微信小程序的体会＊＊"></a>＊＊第一次写微信小程序的体会＊＊</h5><a id="more"></a>
-<p>&emsp;&emsp;这周的任务是写微信小程序的红包分享入口，由于我之前学的框架都是react，小程序的理念和vue比较像，所以最开始上手有点迷糊，我体会到的主要的区别有：</p>
-<ul>
-<li>react是把html和js写在一起的，小程序则是分开来，html是一个文件，js又是另一个文件（其实这个谈不上优劣，就是使用习惯的问题，适应了也差不多，但是引入component时，小程序要对应的html，js，less都引一遍，react少了引html这一步）</li>
-<li>react的data和小程序的data都可以是父组件传给子组件的，不同的是小程序由于是单独的js文件，所以有页面专门对应的page对象，方法和属性都定义在page中</li>
-<li>生命周期不一样，毕竟react是可以到处用的工具，而小程序是微信制定的专门的程序，开发目的就不相同</li>
-</ul>
-<p>&emsp;&emsp;这次我尝试写的是一个小程序的组件，发现从html结构的自由组合度来说，小程序的一些设定非常方便，然后自带的转发组件也很好用。但是遇到的问题就是，由于小程序自有的转发组件包装的很严实，只有使用的入口，没有办法自定一些功能，比如拦截click事件等等，就使得一些请求后端接口的操作必须和转发这个事件独立开来（摊手～）</p>
-<p>&emsp;&emsp;小程序开发工具里的调试面板也很好用，操作页面结构这一块比chrome稍微差点，但是AppData这个功能很好用，尤其是在看切换页面参数状态有没有起作用时～</p>
-<p>&emsp;&emsp;以及团队开发小程序用的是ts，虽然目前它对我来说只是预先设定参数类型的作用，可是这个功能就省了我好多心了～～～</p>
+        <p>最近在学习 canvas，整理了一下常用的API～<br><a id="more"></a></p>
+<p>获取上下文：drawing.getContext(‘2d’);</p>
+<p>路径：beginPath();   closePath()</p>
+<p>填充：fill()     填充样式： fillStyle<br>描边：stroke()    描边样式：strokeStyle<br>剪切：clip()</p>
+<p>矩形（宽高单位是 px）：fillRect(x, y, width, height)   strokeRect()   clearRect()<br>圆：arc(x, y, radius, startAngle, endAngle, true/false)  (true：逆时针  false：顺时针)<br>弧：arcTo(x1, y1, x2, y2, radius)<br>线：moveTo(x, y) + lineTo(x, y)</p>
+<p>文本：fillText(‘string’, x, y, 最大像素宽度)   strokeText(‘string’, x, y, px-width)<br>设置文本属性： context.font = ‘文本样式  大小  字体’<br>context.textAlign = ‘start/end/left/right/center’  // 文本对齐方式，start 从左到右显示，end 从右到左显示<br>context.textBaseLine = ‘top/hanging/middle/alphabetic/ideographic/bottom’ // 文本的基线</p>
+<p>旋转画布：rotate(angle)<br>移动坐标原点：translate(x, y)<br>缩放：scale(scaleX, scaleY)</p>
+<p>线性渐变：var gradient = context.createLinearGradient(起点x，起点y，终点x，终点y)<br>添加渐变颜色：gradient.addColorStop(色标位置（0～1)，颜色值)<br>context.fillStyle = gradient;</p>
+<p>放射渐变：context.createRadialGradient(x1, y1, radius, x2, y2, radius)</p>
+<p>图像：var imgData = context.getImageData(x, y, width, height) // 获取图像信息<br>context.putImageData(imgData, x, y) // 绘制图像<br>imgWidth, imgHeight, imgData: 数组，保存每个像素数据，每个像素4个数据（r,g,b,a）</p>
+<p>画图：ctx.drawImage(img, x, y)  // x y 是绘制图像的起点的坐标，img是<img> 元素 或 var img = new Image(), img.src= ‘’ 或 另一个 <canvas> 元素<br>ctx.drawImage(img, x, y, width, height)  // 绘制图像的起点 和 宽高<br>ctx.drawImage(img, srcx, srcy, srcwidth, srcheight, targetx, targety, targetwidth, targetheight)   // 原始图像的起点，宽高部分的图像 绘制到 上下文的坐标，宽高中</canvas></p>
+<p>阴影：shadowColor   shadowOffsetX   shadowOffsetY  shadowBlur</p>
 
       
     </div>
@@ -337,7 +339,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/practice/" rel="tag"># practice</a>
+            <a href="/tags/html/" rel="tag"># html</a>
           
         </div>
       
@@ -350,8 +352,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/01/sx1/" rel="next" title="实习记录：用Charles将本地文件代理到线上">
-                <i class="fa fa-chevron-left"></i> 实习记录：用Charles将本地文件代理到线上
+              <a href="/2018/09/08/newlifegame/" rel="next" title="Game of Life">
+                <i class="fa fa-chevron-left"></i> Game of Life
               </a>
             
           </div>
@@ -359,10 +361,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/13/sx2/" rel="prev" title="CSS in Depth 读书笔记">
-                CSS in Depth 读书笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -414,17 +412,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -475,22 +464,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#＊＊第一次写微信小程序的体会＊＊"><span class="nav-number">1.</span> <span class="nav-text">＊＊第一次写微信小程序的体会＊＊</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
