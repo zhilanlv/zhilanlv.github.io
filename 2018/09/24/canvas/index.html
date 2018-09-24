@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="最近在学习 canvas，整理了一下常用的API～">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-24T03:14:52.000Z">
+<meta property="og:updated_time" content="2018-09-24T03:26:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Canvas">
 <meta name="twitter:description" content="最近在学习 canvas，整理了一下常用的API～">
@@ -320,7 +320,7 @@
 <p>线性渐变：var gradient = context.createLinearGradient(起点x，起点y，终点x，终点y)<br>添加渐变颜色：gradient.addColorStop(色标位置（0～1)，颜色值)<br>context.fillStyle = gradient;</p>
 <p>放射渐变：context.createRadialGradient(x1, y1, radius, x2, y2, radius)</p>
 <p>图像：var imgData = context.getImageData(x, y, width, height) // 获取图像信息<br>context.putImageData(imgData, x, y) // 绘制图像<br>imgWidth, imgHeight, imgData: 数组，保存每个像素数据，每个像素4个数据（r,g,b,a）</p>
-<p>画图：ctx.drawImage(img, x, y)  // x y 是绘制图像的起点的坐标，img是<img> 元素 或 var img = new Image(), img.src= ‘’ 或 另一个 <canvas> 元素<br>ctx.drawImage(img, x, y, width, height)  // 绘制图像的起点 和 宽高<br>ctx.drawImage(img, srcx, srcy, srcwidth, srcheight, targetx, targety, targetwidth, targetheight)   // 原始图像的起点，宽高部分的图像 绘制到 上下文的坐标，宽高中</canvas></p>
+<p>画图：ctx.drawImage(img, x, y)  // x y 是绘制图像的起点的坐标，img是 img元素 /另一个 canvas元素<br>ctx.drawImage(img, x, y, width, height)  // 绘制图像的起点 和 宽高<br>ctx.drawImage(img, srcx, srcy, srcwidth, srcheight, targetx, targety, targetwidth, targetheight)   // 原始图像的起点，宽高部分的图像 绘制到 上下文的坐标，宽高中</p>
 <p>阴影：shadowColor   shadowOffsetX   shadowOffsetY  shadowBlur</p>
 
       
